@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:maxLength="10"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSeven"
+        app:layout_constraintGuide_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonOther"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="Other"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOne" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSettings"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="Settings"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOther"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReset"
+        app:layout_constraintStart_toEndOf="@+id/buttonOther"
+        app:layout_constraintTop_toTopOf="@+id/buttonOther" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonReset"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOther"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSettings"
+        app:layout_constraintTop_toTopOf="@+id/buttonOther" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonOne"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOther"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFour" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonTwo"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toStartOf="@+id/buttonThree"
+        app:layout_constraintStart_toEndOf="@+id/buttonOne"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonThree"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonOne" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFour"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOne"
+        app:layout_constraintEnd_toStartOf="@+id/buttonFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSeven" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonFive"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFour"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSix"
+        app:layout_constraintStart_toEndOf="@+id/buttonFour"
+        app:layout_constraintTop_toTopOf="@+id/buttonFour" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSix"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFive"
+        app:layout_constraintTop_toTopOf="@+id/buttonFour" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSeven"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFour"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEight"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSeven"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNine"
+        app:layout_constraintStart_toEndOf="@+id/buttonSeven"
+        app:layout_constraintTop_toTopOf="@+id/buttonSeven" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNine"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cornerRadius="0dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSeven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonEight"
+        app:layout_constraintTop_toTopOf="@+id/buttonSeven" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
