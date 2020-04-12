@@ -192,13 +192,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(tempTextView.getText().length() > 0) {
                     CharSequence currentText = tempTextView.getText();
-                    tempTextView.setText(currentText.subSequence(0, currentText.length()-1));
-                }
-                else{
-                    val1 = Double.NaN;
-                    val2 = Double.NaN;
-                    tempTextView.setText(null);
-                    resultTextView.setText(null);
+                    tempTextView.setText(currentText.subSequence(0, currentText.length() - 1));
                 }
             }
         });
