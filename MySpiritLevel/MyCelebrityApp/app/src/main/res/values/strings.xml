@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyCelebrityApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnPlay">Play</string>
+    <string name="tvLevel">Difficulty</string>
+    <string name="tvTimeRemaining">Time Remaining:</string>
+    <string name="tvScore">Score:</string>
+    <string name="celebrity_image">Celebrity Image</string>
+
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Expert</item>
+    </string-array>
+
+</resources>
