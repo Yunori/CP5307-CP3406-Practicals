@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
             displayView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
-                    Log.e("2", "2");
-                    v.performClick();
                     switch (event.getAction()) {
                         case MotionEvent.ACTION_DOWN:
                             switch (displayView.getPosition(event.getX(), event.getY())) {
